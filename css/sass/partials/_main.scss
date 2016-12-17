@@ -1,0 +1,169 @@
+.wrapper {max-width:$wrapper-width; padding:0 $margin-horizontal-large; margin:0 auto; position:relative;
+	&.vc_row {margin:0 auto;}
+}
+
+.menu {background:url(img/menu_bg.png); padding-top:0; padding-bottom:60px;
+	&--home {
+		.wrapper {padding-top:70px; 
+			&:before {content:''; background:url(img/home_menu_1.png) center bottom; width:435px; height:194px; background-size:cover; position: absolute; top:0; left:-90px;}
+			&:after {content:''; background:url(img/home_menu_2.png) center bottom; width:425px; height:230px; background-size:cover; position: absolute; top:0; right:-90px;}
+		}
+	}
+
+	&__title {text-align:center; color:$blue-title; text-transform:uppercase; font-size:36px; font-weight:600; margin:0; line-height:1;}
+	&__subtitle {text-align:center; font-weight:400; margin:0; font-size:30px; line-height:1;}
+	&__list {background:#FFF; box-shadow:0 5px 5px rgba(0,0,0,.3); position:relative; z-index:1; margin-top:30px;
+		& > div {display:flex; flex-wrap:wrap;}
+	}
+	&__inner {align-items:center;}
+	&__item {flex-basis:50%; text-align:center;
+		&:nth-of-type(n+3) .menu__inner {flex-direction:row-reverse;}
+	}
+	&__ftimage {flex-basis:50%;
+		img {margin:0;}
+	}
+	&__content {flex-basis:50%; padding:30px 40px;
+		p {font-size:13px;}
+	}
+	&__itemtitle {font-size:14px; text-transform:uppercase; font-weight:700; color:#000;
+		span {font-style:italic; font-weight:400; }
+	}
+	&__price {float:right; color:$blue; font-weight:700;}
+	&__cals {float:right; color:$blue; font-weight:700; padding-right:50px;}
+}
+
+.wprm_shortcode.wprm_single_menu_item .menu__item .wp-post-image {margin:0;}
+
+.specials4items {background:#ededed;}
+
+.exploremenu {background:url(img/home_exploreourmenu.jpg) fixed; margin-top:-120px; background-size:cover; text-shadow:0 0 3px rgba(0,0,0,.6);
+	.wrapper {height:400px;}
+	&__title {@include vertical-align(relative, 50%); color:#FFF; font-size:48px; font-weight:400; line-height:1; margin:0;
+		b {font-size:80px; display:block; font-weight:400;}
+	}
+	&__link {position:absolute; bottom:0; color:#FFF; text-transform:uppercase; width:340px; text-align:center; left:50%; margin-left:-185px; font-weight:600; font-size:16px; line-height:1; opacity:.7; transition:.5s;
+		i {display:block; font-size:40px;}
+		&:hover, &:focus {text-decoration:none; opacity:1;}
+	}
+}
+
+.menu__cols {margin-top:60px;
+	p {margin:0;}
+	.no-border {
+		.wprm_category_menu {border-right:none; padding-right:0;}
+	}
+	h3 {text-align:center; color:$gray; text-transform:uppercase; font-size:21px; margin-bottom:30px;}
+	.menu__itemtitle {float:left; margin:0;
+		i {font-weight:300; text-transform:none;}
+	}
+	.col--9 {
+		.wprm_category_menu {border-left:1px solid #7e7d7d; padding-left:30px;}
+	}
+	.menu__item {padding-bottom:20px;}
+	.menu__inner {text-align:left;}
+	.menu__ftimage {display:none;}
+	.menu__content {flex-basis:100%; padding:0;}
+	.menu__price {float:right;}
+	.menu__description {float:left; font-style:italic; width:100%; font-size:14px;}
+}
+
+.call2action {background:url(img/home_call2action.jpg) fixed; background-size:cover; text-shadow:0 0 3px rgba(0,0,0,.6);
+	.wrapper {height:500px;}
+
+}
+
+.gallery {
+	//p {margin:0;}
+	img {margin:0; height:auto;
+		&.margin-b-20 {margin-bottom:20px;}
+	}
+}
+
+.yelp-history {background:#f4eadc; box-shadow: 0 0 3px rgba(0,0,0,.4); max-width:980px;
+	.vc_column-inner {background-position:center !important; background-size:contain;}
+	.wpb_single_image {margin-bottom:0;}
+}
+
+.parallax-behind {top:-50px; width:100%; z-index:-1; height:400px;}
+.parallax-behind-no-margin {height:400px;}
+
+.contact_page {padding-bottom:0; background:url(img/contact_bg.jpg); background-size:contain;
+	.wpb_gmaps_widget {margin-bottom:0;}
+	.contact_block {
+		strong {font-size:18px; text-transform:uppercase; color:$blue; width:90px; display:inline-block; padding-bottom:5px; vertical-align:top;}
+		em {display: inline-block; width:calc(100% - 95px); font-style:normal;}
+	}
+}
+.contact_form {
+	.vc_col-sm-6, .vc_col-sm-12 {margin-bottom:20px;}
+	input[type=text], textarea {display:inline-block; width:100%; border:1px solid #b3b3b3; text-transform:uppercase; padding:10px;}
+	input[type=submit] {width:200px;}
+
+}
+
+.menu {
+	.vc_col-sm-6, .vc_col-sm-4 {
+		.wpb_content_element {margin-bottom:0;}
+	}
+}
+
+.blog_page {
+	article {
+		&:nth-of-type(odd) {-webkit-flex-direction: row-reverse; flex-direction:row-reverse;}
+		img {width:100%;}
+		&:last-of-type {
+			&:after {display:none;}
+		}
+
+	}
+}
+.post {margin-bottom:60px;
+	&__content {padding:0 50px 0 30px;}
+	&__date {text-transform:uppercase; font-size:14px; margin:0;
+		&--single {margin-bottom:30px;}
+	}
+	&__title {line-height:1.3; font-size:24px;
+		a {color:$blue;}
+		&--single {margin-bottom:0;}
+	}
+	&:after {content:''; background: url(img/divider.png) no-repeat 50%; width:100%; height:33px; background-size:contain; margin-top:60px;}
+	.view-article {display:inline-block; margin-top:30px; line-height:1.3;}
+
+}
+
+.ftImage {
+	img {width:100%;}
+}
+
+.pagination {text-align:center; margin:30px 0 60px; display:inline-block;
+	a {color:$blue; font-weight:700; transition:.5s;
+		&:hover {text-decoration:none; background:#e2e2e2;}
+	}
+	.prev {width:110px;}
+	.next {width:80px;}
+	span {background:$blue; color:#FFF;}
+}
+.page-numbers {border:1px solid #000; margin:0; padding:0; width:50px; float:left; padding:10px 0; margin-left:-1px;}
+
+.with-sidebar {float:left; width:calc(100% - 290px);}
+
+.mailchimp {background:url(img/mailchimp_bg.png) 50%; background-size:cover; padding:70px 0;
+	.mc-field-group {float:left; width:50%; margin-bottom:20px; padding:0 20px;
+		label {text-transform:uppercase; color:#a6a6a6; margin-bottom:5px; display:inline-block;} 
+		input {width:100%; border:1px solid #a6a6a6; font-size:16px; padding:7px 10px; height:45px; text-transform:uppercase;}
+		&.size1of2 {
+			input {width:60px;}
+		}
+	}
+	input[type=submit] {cursor:pointer;}
+}
+
+.menu_highlight > div > .wpb_wrapper, .vc_row.menu_highlight  {box-shadow:0 0 4px rgba(0,0,0,.3); padding:20px; background:#FFF;}
+.menu_highlight {
+	//.vc_column-inner  {padding-left: 0 !important;}
+	h1 {color:#ff0101; text-transform:uppercase; font-weight:700; font-size:25px; margin:0;}
+	h2 {font-size:16px; font-weight:700; text-transform:uppercase; color:#000; margin:0;}
+	h3 {font-size:16px; font-style:italic; font-weight:400; color:#000; margin:0; text-transform:none;}
+	.wprm_category_menu {margin-top:30px;}
+	h2.menu__itemtitle {font-weight:400; text-transform:none; font-style:italic;}
+}

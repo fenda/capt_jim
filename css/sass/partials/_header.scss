@@ -1,0 +1,17 @@
+.header {background:$blue-rgba; padding:10px 0 14px; position:absolute; width:100%; top:0; left:0; border-bottom:1px solid #FFF; z-index:2;
+	&__phone {float:left; font-size:16px; font-weight:700; padding:0 15px; margin:0;
+		span {font-size:30px;}
+	}
+	&__tripadvisor, &__yelp {float:right; position:relative; background:url(img/logo_tripadvisor.png) no-repeat; background-size:contain; width:72px; height:38px; margin:25px 0 0 40px;
+		span {position:absolute; top:-10px; right:-10px; background:#e00000; border:3px solid #FFF; border-radius:50%; font-size:10px; line-height:20px; font-weight:700; width:28px; height:28px; text-align:center;}
+	}
+	&__yelp {background-image:url(img/logo_yelp.png); right:-15px;}
+}
+
+.logo {float:left; width:260px;}
+.header-info {float:right; color:#FFF;}
+
+.ft-image {text-shadow:0 0 3px rgba(0,0,0,.6); text-transform:uppercase; height:450px;
+	&--home {background:url(img/home_ftimage.jpg) fixed; background-size:cover;}
+	.wrapper {height:100%;}
+}

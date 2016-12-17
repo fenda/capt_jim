@@ -1,0 +1,24 @@
+.nav {float:right; font-weight:600; font-size:14px; clear:right;
+	ul {margin:11px 0 0 ; list-style:none; text-transform:uppercase; padding:0;
+		li {display:inline-block;
+			a {padding:0 15px 15px; text-decoration:none; color:#FFF; transition:.5s; border-bottom:3px solid transparent;}
+			&.current-menu-item, &:hover {
+				a {border-bottom:3px solid #FFF;}
+			}
+		}
+	}
+	&--footer {float:none; font-size:13px;
+		ul {margin-top:25px;
+			li {
+				&:before {content:'|';}
+				&:first-child {
+					&:before {content:'';}
+				}
+				a {}
+				&.current-menu-item, &:hover {
+					a {border-bottom:none;}
+				}
+			}
+		}
+	}
+}
